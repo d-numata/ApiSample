@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :blogs, only: [:index] #この行を追記
-  resources :poems, only: [:index] #この行を追記
+  resources :poems, only: [:index, :show] #この行を追記
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
